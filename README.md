@@ -23,8 +23,10 @@ So far, the repository covers the following topics:
 - Control Flow
   - Conditional Statements
   - Loops
+  - Nested Loops
 - Functions
 - Arrays
+- 2D Array
 - Pointers
 - Strings
 - File Handling
