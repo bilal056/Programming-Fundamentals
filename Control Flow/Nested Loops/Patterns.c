@@ -256,3 +256,122 @@ int main() {
 
     return 0;
 }
+    int rows=4, row1=5, i, j, k;
+    char symbols;
+
+    // Pattern 1 Description:
+    // This pattern prints a right-aligned triangle with '*'.
+    // Example for rows=4:
+    //       * 
+    //     * * 
+    //   * * * 
+    // * * * * 
+    printf("Pattern-1\n");
+    for (i = 0; i < rows; i++)
+    {
+        for (k = rows; k > i; k--)
+        {
+            printf("  ");
+        }
+        
+        for (j = 0; j <= i; j++)
+        {
+            printf("* ");
+        }
+        
+        printf("\n");
+    }
+
+    // Pattern 2 Description:
+    // This pattern prints an inverted right-aligned triangle with '*'.
+    // Example for rows=4:
+    // * * * * 
+    //   * * * 
+    //     * * 
+    //       * 
+    printf("\n");
+    printf("Pattern-2\n");
+    for (i = 0; i < rows; i++)
+    {
+        for (j = 0; j < i; j++)
+        {
+            printf("  ");
+        }
+        
+        for (k = rows; k > i; k--)
+        {
+            printf("* ");
+        }
+        
+        printf("\n");
+    }
+
+    // Pattern 3 Description:
+    // This pattern prints an inverted left-aligned triangle with '*'.
+    // Example for rows=4:
+    // * * * * 
+    //  * * * 
+    //   * * 
+    //    * 
+    printf("\n");
+    printf("Pattern-3\n");
+    for (i = 0; i < rows; i++)
+    {
+        for (j = 0; j < i; j++)
+        {
+            printf(" ");
+        }
+        for (k = rows; k > i; k--)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+    // Pattern 4 Description:
+    // This pattern prints a diamond-like structure with '*'.
+    // Example for rows=4:
+    //  * * * * 
+    //  * * * 
+    //  * * 
+    //  * 
+    printf("\n");
+    printf("Pattern-4\n");
+    for (i = 0; i < rows; i++)
+    {
+        for (j = 0; j < i; j++)
+        {
+            printf(" *");
+        }
+        for (k = rows; k > i; k--)
+        {
+            printf(" *");
+        }
+        printf("\n");
+    }
+
+    // Pattern 12 Description:
+    // This pattern prints a pyramid with numbers.
+    // Example for rows=6:
+    //     1
+    //    2 2
+    //   3 3 3
+    //  4 4 4 4
+    // 5 5 5 5 5
+    // 6 6 6 6 6 6
+    printf("\n");
+    printf("Pattern-12\n");
+    for (i = 1; i <= rows; i++)
+    {
+        for (j = 1; j <= rows - i; j++)
+        {
+            printf(" ");
+        }
+        
+        for (k = 1; k <= i; k++)
+        {
+            printf("%d ", i);
+        }
+        
+        printf("\n");
+    }
